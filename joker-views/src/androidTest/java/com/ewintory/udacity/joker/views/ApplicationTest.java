@@ -14,14 +14,16 @@
  * limitations under the License.
  */
 
-apply plugin: 'java'
+package com.ewintory.udacity.joker.views;
 
-repositories {
-    jcenter()
+import android.app.Application;
+import android.test.ApplicationTestCase;
+
+/**
+ * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
+ */
+public class ApplicationTest extends ApplicationTestCase<Application> {
+    public ApplicationTest() {
+        super(Application.class);
+    }
 }
-
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-}
-
-sourceCompatibility = 1.7

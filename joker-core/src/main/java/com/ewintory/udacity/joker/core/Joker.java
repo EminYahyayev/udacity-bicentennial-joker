@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ewintory.udacity.jocker.core;
+package com.ewintory.udacity.joker.core;
 
 import java.util.Random;
 
@@ -25,9 +25,9 @@ import java.util.Random;
  */
 public final class Joker {
 
-    private static final Random sRandom = new Random();
+    private final Random mRandom = new Random();
 
-    private static final String[] sJokes = {
+    private final String[] mJokes = {
             "Two cannibals were eating a clown. One turns to the other and says \"Does this taste funny to you?\"",
             "How do you make a hanky dance? \n" +
                     "Put a little boogie in it!",
@@ -46,11 +46,9 @@ public final class Joker {
                     "\"Not at all.\" *makes 'motor-boating' noise. \"Num-num-num-num.\""
     };
 
-    public String randomJoke() {
-        return sJokes[sRandom.nextInt(sJokes.length)];
-    }
+    public Joker() {}
 
-    private Joker() {
-        throw new AssertionError("No instances.");
+    public String randomJoke() {
+        return mJokes[mRandom.nextInt(mJokes.length)];
     }
 }
