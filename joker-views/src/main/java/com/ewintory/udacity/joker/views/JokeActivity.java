@@ -29,23 +29,20 @@ public final class JokeActivity extends AppCompatActivity {
 
     public static final String EXTRA_JOKE = "com.ewintory.udacity.joker.views.EXTRA_JOKE";
 
-    private TextView mJokeView;
-    private String mJoke;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mJoke = getIntent().getStringExtra(EXTRA_JOKE);
-        if (TextUtils.isEmpty(mJoke)) {
-            Log.e(TAG, "One must specify the joke for JokeActivity");
+        String joke = getIntent().getStringExtra(EXTRA_JOKE);
+        if (TextUtils.isEmpty(joke)) {
+            Log.e(TAG, "One have to specify the joke for this JokeActivity");
             finish();
             return;
         }
 
         setContentView(R.layout.activity_joke);
-        mJokeView = (TextView) findViewById(R.id.joke);
-        mJokeView.setText(mJoke);
+        TextView jokeView = (TextView) findViewById(R.id.joke);
+        jokeView.setText(joke);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }

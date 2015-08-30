@@ -13,16 +13,17 @@
         android:id="@+id/instructions_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/instructions" />
+        android:text="@string/instructions"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/instructions_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
         android:onClick="tellJoke"
-        android:text="@string/button_text"
-
-        />
+        android:text="@string/button_text" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"

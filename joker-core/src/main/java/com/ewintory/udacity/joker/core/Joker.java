@@ -28,19 +28,27 @@ public final class Joker {
     private final Random mRandom = new Random();
 
     private final String[] mJokes = {
-            "Two cannibals were eating a clown. One turns to the other and says \"Does this taste funny to you?\"",
+            "Two cannibals were eating a clown. One turns to the other and says \n" +
+                    "\"Does this taste funny to you?\"",
+
             "How do you make a hanky dance? \n" +
                     "Put a little boogie in it!",
+
             "What is a brunette between two blondes? \n" +
                     "A translator!",
+
             "Do you know why blind people don't like to sky-dive? \n" +
                     "It scares their dogs!",
+
             "A man with demensia is driving on the freeway. His wife calls him on the mobile phone and says \n" +
                     "\"Sweetheart, I heard there's someone driving the wrong way on the freeway.\" \n" +
                     "He says \"One? There's hundreds!\"",
+
             "What's silent and smells like worms? \n" +
-                    "Bird farts.",
+                    "Bird facts.",
+
             "It must have been an engineer who designed the human body. Who else would put a waste processing plant next to a recreation area?",
+
             "A woman goes into a doctor's office, and the doctor says \n" +
                     "\"Do you mind if I numb your breasts?\" \n" +
                     "\"Not at all.\" *makes 'motor-boating' noise. \"Num-num-num-num.\""
