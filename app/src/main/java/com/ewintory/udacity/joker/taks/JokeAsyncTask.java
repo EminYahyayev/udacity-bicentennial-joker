@@ -45,7 +45,7 @@ public final class JokeAsyncTask extends AsyncTask<Void, Void, Pair<IOException,
         if (myApiService == null) {  // Only do this once
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(), new AndroidJsonFactory(), null)
 //                    .setRootUrl("https://bicentennial-joker.appspot.com/_ah/api/");
-                    .setRootUrl("http://10.0.3.3:8080/_ah/api/")
+                    .setRootUrl("http://10.0.3.2:8080/_ah/api/")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
                         public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
