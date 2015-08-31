@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright 2015.  Emin Yahyayev
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,21 +14,15 @@
   ~ limitations under the License.
   -->
 
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ewintory.udacity.joker.views" >
+<manifest package="com.ewintory.udacity.joker.views"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
-        android:label="@string/app_name" >
+        android:label="@string/app_name">
         <activity
             android:name=".JokeActivity"
-            android:label="@string/activity_joke" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:label="@string/activity_joke" />
     </application>
 
 </manifest>
